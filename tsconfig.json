@@ -1,0 +1,8 @@
+{
+    "include": ["src/scripts/*"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+      "target": "es2021",
+      "strict": true
+    }
+}
