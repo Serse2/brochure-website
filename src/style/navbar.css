@@ -11,6 +11,8 @@
     left: 0;
     right: 0;
     z-index: 100;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .header-container .logo-container {
@@ -19,7 +21,6 @@
 }
 
 .header-container .logo-container .logo {
-    height: 80px;
     margin-right: 1rem;
 }
 .header-container .logo-container p {
@@ -99,10 +100,6 @@
 @media screen and (max-width: 768px) {
     .header-container {
         height: 80px;
-    }
-
-    .header-container .logo-container .logo {
-        height: 60px;
     }
 
     .header-container .navbar {
