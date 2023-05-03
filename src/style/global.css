@@ -1,7 +1,11 @@
 :root {
-    --primary: #5d5d5d;
+    --primary: #494c57;
     --secondary: #f2f2f2;
     --white: #ffffff;
+
+    --button-primary: #576afd;
+
+    --background-primary: #e4ebff;
   }
 
 
@@ -23,11 +27,152 @@ body {
 }
 
 main {
-    margin-top: 130px;
+    padding-top: 80px;
 }
 
 .separator-vertical {
     height: 50px;
     width: 1px;
-    background-color: #e5e5e5;
+    background-color: var(--primary);
+}
+
+
+/* text */
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1em;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.color-text-white {
+    color: var(--white);
+}
+
+.color-text-primary {
+    color: var(--primary);
+}
+
+.text-display {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.text-display-h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+
+.block-separator {
+    height: 250px;
+    width: 100%;
+}
+
+/* button */
+.button-primary {
+    background-color: var(--button-primary);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--white);
+    z-index: 1;
+    position: relative;
+}
+
+
+/* flex row */
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+@media screen and (min-width: 821px) {
+    .row {
+        flex-direction: row;
+    }
+}
+
+/* col from 1 to 12 */
+.col-12,
+.col-11,
+.col-10, 
+.col-9, 
+.col-8, 
+.col-7, 
+.col-6, 
+.col-5, 
+.col-4, 
+.col-3, 
+.col-2, 
+.col-1 {
+    width: 100%;
+}
+
+@media screen and (min-width: 821px) {
+    .col-12 {
+        width: 100%;
+    }
+    .col-11 {
+        width: 91.6666666667%;
+    }
+    .col-10 {
+        width: 83.3333333333%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-8 {
+        width: 66.6666666667%;
+    }
+    .col-7 {
+        width: 58.3333333333%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-5 {
+        width: 41.6666666667%;
+    }
+    .col-4 {
+        width: 33.3333333333%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-2 {
+        width: 16.6666666667%;
+    }
+    .col-1 {
+        width: 8.3333333333%;
+    }
+}
+
+/* flex column */
+
+/* paragraph */
+.paragraph-container {
+    padding: 1em;
 }

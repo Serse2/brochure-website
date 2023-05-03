@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/advantages.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100&family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100&family=Poppins:wght@800&family=Shadows+Into+Light&display=swap');
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -35,7 +37,7 @@
                         <a class="navbar-link" href="index.html">Home</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link" href="second-page.html">Second page</a>
+                        <a class="navbar-link" href="chi-siamo.html">Chi siamo</a>
                     </li>
                     <div class="separator-vertical"></div>
                     <li class="navbar-item">
@@ -47,12 +49,135 @@
     </header>
     <main>
         <section>
-            <div class="hero-container">
-                <div class="hero-text">
-                    <h1>Produzione Fotovoltaico</h1>
-                    <p>Monitora la produzione del tuo impianto fotovoltaico</p>
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="text-display color-text-primary">Monitoraggio impianto fotovoltaico online.</h1>
+                        <h3 class="text-display-h3 color-text-primary">Produzione Fotovoltaico è l'applicazione online che consente il controllo dell’impianto fotovoltaico per l'autoconsumo, il consumo e la produzione di energia attraverso le autoletture dei contatori.</h3>
+                        <button class="button-primary">Inizia subito!</button>
+                    </div>
+                    <img src="assets/images/Phone-mockup.png" alt="Produzione Fotovoltaico applicazione" width="200px">
+                    
                 </div>
             </div>
+            <div class="hero-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e4ebff" fill-opacity="1" d="M0,96L80,85.3C160,75,320,53,480,85.3C640,117,800,203,960,218.7C1120,235,1280,181,1360,154.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e4ebff" fill-opacity="0.5" d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,256C672,277,768,299,864,293.3C960,288,1056,256,1152,213.3C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e4ebff" fill-opacity="0.3" d="M0,224L48,197.3C96,171,192,117,288,101.3C384,85,480,107,576,144C672,181,768,235,864,240C960,245,1056,203,1152,176C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            </div>
+        </section>
+        <div class="block-separator"></div>
+        <section>
+            <div class="row">
+                <div class="col-3">
+                    <div class="text-advantages">
+                        <div class="advantages">
+                            <svg width="70px" height="70px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.77778 10.2222V18C5.77778 19.1046 6.67321 20 7.77778 20H12M5.77778 10.2222L11.2929 4.70711C11.6834 4.31658 12.3166 4.31658 12.7071 4.70711L17.5 9.5M5.77778 10.2222L4 12M18.2222 10.2222V18C18.2222 19.1046 17.3268 20 16.2222 20H12M18.2222 10.2222L20 12M18.2222 10.2222L17.5 9.5M17.5 9.5V6M12 20V15" stroke="#494c57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </div>
+                        <p>Hai il dato di consumo domestico e autoconsumo, mentre il monitoraggio da inverter non lo può calcolare.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="text-advantages">
+                        <div class="advantages">
+                            <svg fill="#494c57" width="60px" height="60px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <title>network</title>
+                                <path d="M27 22.25c-0.831 0.002-1.598 0.277-2.215 0.739l0.010-0.007-3.299-2.998c0.82-1.097 1.313-2.479 1.313-3.977 0-1.614-0.572-3.094-1.525-4.249l0.009 0.011 3.644-3.643c0.584 0.391 1.302 0.624 2.074 0.624 2.077 0 3.76-1.683 3.76-3.76s-1.683-3.76-3.76-3.76c-2.077 0-3.76 1.683-3.76 3.76 0 0.773 0.233 1.491 0.633 2.088l-0.009-0.014-3.643 3.643c-1.145-0.944-2.627-1.517-4.244-1.517-0.937 0-1.828 0.192-2.638 0.54l0.044-0.017-1.032-1.874c0.791-0.688 1.288-1.695 1.288-2.819 0-2.060-1.67-3.729-3.729-3.729s-3.729 1.67-3.729 3.729c0 2.060 1.67 3.729 3.729 3.729 0.007 0 0.015-0 0.022-0h-0.001c0.398-0.006 0.778-0.073 1.133-0.194l-0.026 0.008 1.037 1.883c-1.757 1.243-2.89 3.265-2.894 5.553v0.001c0.010 0.697 0.125 1.364 0.33 1.99l-0.013-0.047-1.423 0.603c-0.681-0.971-1.795-1.597-3.056-1.597-2.056 0-3.722 1.666-3.722 3.722s1.666 3.722 3.722 3.722c2.056 0 3.722-1.666 3.722-3.722 0-0.264-0.027-0.521-0.079-0.769l0.004 0.024 1.419-0.602c1.167 2.093 3.367 3.485 5.892 3.485 1.73 0 3.308-0.654 4.5-1.728l-0.006 0.005 3.309 3.007c-0.335 0.544-0.535 1.201-0.539 1.906v0.001c0 2.071 1.679 3.75 3.75 3.75s3.75-1.679 3.75-3.75c0-2.071-1.679-3.75-3.75-3.75v0zM7.69 5c0-1.243 1.007-2.25 2.25-2.25s2.25 1.007 2.25 2.25c0 1.243-1.007 2.25-2.25 2.25v0c-1.242-0.002-2.248-1.008-2.25-2.25v-0zM5 22.92c-1.242-0.001-2.248-1.007-2.248-2.249s1.007-2.249 2.249-2.249c1.242 0 2.248 1.006 2.249 2.248v0c-0.002 1.242-1.008 2.248-2.25 2.25h-0zM27 2.75c1.243 0 2.25 1.007 2.25 2.25s-1.007 2.25-2.25 2.25c-1.243 0-2.25-1.007-2.25-2.25v0c0.002-1.242 1.008-2.248 2.25-2.25h0zM10.69 16c0-0 0-0 0-0.001 0-2.932 2.377-5.309 5.309-5.309s5.309 2.377 5.309 5.309c0 2.932-2.377 5.309-5.309 5.309h-0c-2.931-0.003-5.306-2.378-5.31-5.308v-0zM27 28.25c-1.243 0-2.25-1.007-2.25-2.25s1.007-2.25 2.25-2.25c1.243 0 2.25 1.007 2.25 2.25v0c-0.002 1.242-1.008 2.248-2.25 2.25h-0z"></path>
+                                </svg>
+                        </div>
+                        <p>Compatibile con tutti i tipi di impianti fotovoltaici, indipendentemente dalle marche usate.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="text-advantages">
+                        <div class="advantages">
+                            <svg width="70px" height="70px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m 8 1.992188 c -2.617188 0 -5.238281 0.933593 -7.195312 2.808593 l -0.496094 0.480469 c -0.3984378 0.378906 -0.410156 1.011719 -0.03125 1.410156 c 0.382812 0.398438 1.015625 0.410156 1.414062 0.03125 l 0.5 -0.476562 c 0.582032 -0.558594 1.25 -1.011719 1.96875 -1.359375 c 0.332032 -1.148438 1.171875 -2.109375 2.308594 -2.582031 c 0.5625 -0.230469 1.152344 -0.328126 1.734375 -0.296876 c 0.96875 0.050782 1.910156 0.449219 2.625 1.164063 c 0.488281 0.488281 0.824219 1.078125 1.011719 1.714844 c 0.71875 0.347656 1.386718 0.800781 1.96875 1.359375 l 0.5 0.476562 c 0.398437 0.378906 1.03125 0.367188 1.414062 -0.03125 c 0.378906 -0.398437 0.367188 -1.03125 -0.03125 -1.410156 l -0.496094 -0.480469 c -1.957031 -1.875 -4.578124 -2.808593 -7.195312 -2.808593 z m -3.292969 5.007812 c -0.34375 0.230469 -0.660156 0.503906 -0.945312 0.8125 l -0.5 0.550781 c -0.375 0.40625 -0.347657 1.042969 0.0625 1.414063 c 0.410156 0.371094 1.042969 0.339844 1.414062 -0.070313 l 0.5 -0.546875 c 0.214844 -0.234375 0.472657 -0.429687 0.761719 -0.589844 v -0.570312 c 0 -0.386719 0.222656 -0.691406 0.417969 -1 z m 7.054688 0.355469 c -0.019531 0.058593 -0.042969 0.117187 -0.066407 0.175781 c -0.246093 0.59375 -0.648437 1.0625 -1.128906 1.4375 c 0.066406 0.0625 0.132813 0.125 0.195313 0.195312 l 0.5 0.542969 c 0.371093 0.410157 1.003906 0.441407 1.414062 0.070313 c 0.40625 -0.371094 0.4375 -1.007813 0.0625 -1.414063 l -0.5 -0.546875 c -0.152343 -0.167968 -0.308593 -0.320312 -0.476562 -0.460937 z m 0 0" fill="#494c57" fill-opacity="0.34902"/>
+                                <path d="m 8.152344 3.007812 c -0.4375 -0.023437 -0.882813 0.046876 -1.300782 0.222657 c -1.117187 0.460937 -1.851562 1.558593 -1.851562 2.769531 h 2 c 0 -0.40625 0.242188 -0.769531 0.617188 -0.925781 c 0.375 -0.152344 0.800781 -0.070313 1.089843 0.21875 c 0.289063 0.289062 0.371094 0.714843 0.21875 1.089843 c -0.15625 0.375 -0.519531 0.617188 -0.925781 0.617188 c -0.550781 0 -1 0.449219 -1 1 v 2 h 2 v -1.179688 c 0.785156 -0.28125 1.441406 -0.875 1.769531 -1.671874 c 0.464844 -1.117188 0.207031 -2.414063 -0.648437 -3.269532 c -0.535156 -0.535156 -1.242188 -0.835937 -1.96875 -0.871094 z m -0.152344 7.992188 c -0.550781 0 -1 0.449219 -1 1 s 0.449219 1 1 1 s 1 -0.449219 1 -1 s -0.449219 -1 -1 -1 z m 0 0" fill="#494c57"/>
+                            </svg>
+                        </div>
+                        <p>Funziona Offline, realizzata in questo modo perché molte volte la connettività non c'è.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="text-advantages">
+                        <div class="advantages"><svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            width="65px" height="65px" viewBox="0 0 512 512"  xml:space="preserve">
+                       <style type="text/css">
+                           .st0{fill:#494C57;}
+                       </style>
+                       <g>
+                           <path class="st0" d="M459.12,295.188c8.203-9.359,13.609-21.297,13.609-34.469c0-33.922-27.594-61.516-61.5-61.516h-78.531
+                               c-17.25-0.797-21.453-4.063-21.625-4.203l-0.141-0.188c0.469-4.563,8.375-15.719,12.25-21.156
+                               c5.563-7.813,10.813-15.203,13.813-23.406l1.328-3.594c7.672-20.641,21.969-59.063,6.469-103.219
+                               C335.401,16.656,314.51,0,290.292,0c-28.203,0-51.656,22.563-57.016,54.891c-1.797,10.875-25.641,51.875-71.156,105.391
+                               c-12.594,14.813-26.797,27.125-41.828,40.156c-11.875,10.281-24.156,20.906-37.172,33.922
+                               c-34.141,34.125-50.391,91.984-41.406,147.359c7.766,47.938,32.781,84.688,70.438,103.516
+                               c30.844,15.422,90.734,24.047,136.406,25.734c19.109,0.703,33.516,1.031,45.328,1.031c22.594,0,33.828-1.266,48.047-2.875
+                               l4.797-0.531l0.813-0.094l23.078-3.344l0.438-0.063c29.891-4.875,51.578-30.344,51.578-60.563l-0.047-2.172
+                               c17.454-10.828,28.813-30.078,28.813-52.031c0-7.438-1.141-13.906-3.109-19.516c11.922-11.219,19.344-27.109,19.344-44.609
+                               C467.636,315.031,464.558,304.375,459.12,295.188z M412.838,299.25h18c7.359,6.656,12.016,16.219,12.016,26.953
+                               c0,11.453-5.359,21.547-13.609,28.234H405.12c-4.563,0-8.25,3.688-8.25,8.25s3.688,8.266,8.25,8.266h15.063
+                               c5,5.609,6.438,12.234,6.438,19.375c0,11.391-5.297,21.453-13.469,28.125h-23.203c-4.578,0-8.266,3.703-8.266,8.266
+                               s3.688,8.25,8.266,8.25h6.531c0.875,3.047,1.375,6.234,1.375,9.563c0,18.25-13.328,33.25-30.781,36.094l-23.078,3.344
+                               c-16.719,1.844-26.531,3.25-50.109,3.25c-11.063,0-25.156-0.313-44.406-1.031c-43.641-1.609-99.625-9.813-126.25-23.125
+                               c-74.531-37.266-74.578-159.188-22.578-211.188c29.359-29.359,56.469-47.438,80.344-75.531
+                               c36.891-43.391,73.016-94.906,76.734-117.406c3.656-22.063,17.984-34.156,32.563-34.156c12.25,0,24.688,8.547,31.125,26.875
+                               c13.406,38.219-1.203,72.25-7.688,90.063c-6.531,17.844-42.547,46.813-20.594,70.359c8.156,8.75,24.172,11.281,39.016,11.922
+                               h79.078c20.297,0,36.719,16.438,36.719,36.719c0,8.672-4.906,16.469-11.406,22h-23.704c-4.563,0-8.266,3.688-8.266,8.25
+                               S408.276,299.25,412.838,299.25z"/>
+                       </g>
+                       </svg></div>
+                        <p>Non richiede installazione di componenti da parte di un tecnico, serve solo che l'impianto sia allacciato.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-5">
+                    <img src="assets/images/phone-mockup-2.png" alt="Produzione Fotovoltaico applicazione" width="100%" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <div class="paragraph-container">
+                        <h2 text-display-h3 color-text-primary>Monitoraggio impianto fotovolatico tramite autoletture.</h2>
+                        <p class="color-text-primary">Se sei alla ricerca di un modo per monitorare il tuo sistema fotovoltaico e massimizzare l'efficienza della tua produzione energetica, allora Produzione Fotovoltaico è la soluzione che stai cercando.</p> 
+                        <p class="color-text-primary">Grazie ai nostri strumenti di monitoraggio, potrai tenere sempre sotto controllo la produzione e lo scambio di energia del tuo impianto, calcolando il tuo autoconsumo e il tuo effettivo consumo di energia domestica.</p>
+                        <p class="color-text-primary"> In questo modo, potrai ottimizzare l'utilizzo della tua energia solare e ridurre i costi di bolletta. La nostra piattaforma è facile da usare e offre una vasta gamma di informazioni utili per la gestione della tua produzione energetica.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="paragraph-container">
+                        <h2 text-display-h3 color-text-primary>Autoconsumo, consumo dell'abitazione e guadagno.</h2>
+                        <p class="color-text-primary">Il monitoraggio inverter base non fornisce informazioni dettagliate sull'autoconsumo e il consumo dell'abitazione. Questi dati sono fondamentali per massimizzare l'efficienza dell'impianto fotovoltaico e per identificare eventuali malfunzionamenti.</p> 
+                        <p class="color-text-primary">Con l'autolettura dei contatori di produzione e scambio, è possibile calcolare l'energia prodotta dall'impianto e quella consumata dall'abitazione. In questo modo, è possibile determinare l'autoconsumo e il surplus di energia prodotta e venduta alla rete.</p>
+                        <p class="color-text-primary">Grazie a Produzione Fotovoltaico saprai quanto stai guadagnando utilizzado l'energia pulita autoprodotta.</p>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="assets/images/phone-mockup-4.png" alt="Produzione Fotovoltaico applicazione" width="100%" loading="lazy">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <img src="assets/images/phone-mockup-5.png" alt="Produzione Fotovoltaico applicazione" width="100%" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <div class="paragraph-container">
+                        <h2 text-display-h3 color-text-primary>Inserisci le autoletture.</h2>
+                        <p class="color-text-primary">Inserendo mensilmente all’interno della piattaforma produzione fotovoltaico le autoletture dei tuoi contatori potrai di monitorare il consumo domestico, il risparmio derivato dall'autoconsumo, l'autoconsumo di energia e la produzione.</p> 
+                        <p class="color-text-primary">Viene richiesta un'azione manuale, è vero, ma attraverso le autoletture hai la certezza del dato rilevato e non dovrai preoccuparti di installare meter, inoltre così è compatibile con tutti gli impianti fotovoltaici esistenti.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="youtube-video">
+                <iframe src="https://www.youtube.com/embed/UvdzcnGmQiM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> -->
         </section>
     </main>
     <script type="module" src="scripts/index.ts"></script>
