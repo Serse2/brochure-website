@@ -72,11 +72,8 @@ p {
     text-transform: uppercase;
 }
 
-.flex-1 {
-    flex: 1;
-}
-.flex-2 {
-    flex: 2;
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 .block-separator {
@@ -88,7 +85,7 @@ p {
 .button-primary {
     background-color: var(--button-primary);
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 0.5rem 1rem;
     font-size: 0.9em;
     font-weight: 600;
@@ -98,6 +95,7 @@ p {
     color: var(--white);
     z-index: 1;
     position: relative;
+    height: 50px;
 }
 
 
@@ -170,7 +168,31 @@ p {
     }
 }
 
-/* flex column */
+/* flex utils */
+
+.flex {
+    display: flex;
+}
+
+.align-top {
+    align-items: flex-start;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
 
 /* paragraph */
 .paragraph-container {

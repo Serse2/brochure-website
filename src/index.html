@@ -7,10 +7,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100&family=Poppins:wght@800&family=Shadows+Into+Light&display=swap');
     </style>
+    <link rel="stylesheet" href="/src/style/normalize.css">
     <link rel="stylesheet" href="/src/style/global.scss">
     <link rel="stylesheet" href="/src/style/navbar.scss">
     <link rel="stylesheet" href="/src/style/hero.scss">
     <link rel="stylesheet" href="/src/style/advantages.scss">
+    <link rel="stylesheet" href="/src/style/footer.scss">
+    <link rel="stylesheet" href="/src/style/form.scss">
     
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -149,8 +152,36 @@
                 
             </div>
         </section>
+        <section>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e4ebff" fill-opacity="1" d="M0,288L60,245.3C120,203,240,117,360,117.3C480,117,600,203,720,218.7C840,235,960,181,1080,149.3C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <div class="form-section">
+                <div class="selection">
+                    <div class="paragraph-container">
+                        <h2 text-display-h3 color-text-primary>Registrati o richiedi le licenze</h2>
+                        <p class="color-text-primary">Compila il form per registrarti se sei un privato, se invece sei un'azienda installatrice puoi richiedere le licenze.</p>
+                        <div class="selection-container">
+                            <label class="label-radio-privato selected">
+                                <input type="radio" name="selezione" id="radio-privato" value="privato" checked>
+                                Privato
+                            </label>
+                            <label class="label-radio-azienda">
+                                <input type="radio" name="selezione" id="radio-azienda" value="azienda" >
+                                Azienda
+                            </label>
+                        </div>
+                        <include src="src/common/form-privato.html"></include>
+                        <include src="src/common/form-azienda.html"></include>
+                    </div>
+                </div>
+                
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e4ebff" fill-opacity="1" d="M0,96L80,85.3C160,75,320,53,480,85.3C640,117,800,203,960,218.7C1120,235,1280,181,1360,154.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        </section>
+        <div class="block-separator"></div>
+        <include src="src/common/footer.html"></include>
     </main>
-    <script type="module" src="scripts/index.ts"></script>
-    <script type="module" src="scripts/navbar.ts"></script>
+    <script type="module" src="scripts/index.ts" async></script>
+    <script type="module" src="scripts/navbar.ts" async></script>
+    <script type="module" src="scripts/select-form.ts" async></script>
 </body>
 </html>
