@@ -1,72 +1,91 @@
 #form-privato {
-    display: none;
-    &.selected {
-        display: block;
-    }
+  display: none;
+  &.selected {
+    display: block;
+  }
 }
-
 
 #form-azienda {
-    display: none;
-    border: 1px solid blue;
-    &.selected {
-        display: block;
-    }
+  display: none;
+  border: 1px solid blue;
+  &.selected {
+    display: block;
+  }
 }
 
-.form-section{
-    background-color: var(--background-primary);
-    margin-top: -10px;
+.form-section {
+  background-color: var(--background-primary);
+  margin-top: -10px;
 }
 
 .selection {
-    width: 100%;
-    margin: 0 auto;
-    @media screen and (min-width: 821px) {
-        width: 60%;   
-    }
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 821px) {
+    width: 60%;
+  }
 }
 
+.selection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
 
-.selection-container{
+  #radio-privato,
+  #radio-azienda {
+    display: none;
+  }
 
+  .label-radio-privato,
+  .label-radio-azienda {
+    background-color: var(--white);
+    border-radius: 25px;
+    border: 2px solid var(--white);
+    min-width: 150px;
+    height: 50px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    margin-bottom: 1em;
-
-    #radio-privato,
-    #radio-azienda {
-        display: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    padding: 0 16px;
+    &.selected {
+      border: 2px solid var(--button-primary);
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
     }
-
-    .label-radio-privato,
-    .label-radio-azienda {
-        background-color: var(--white);
-        border-radius: 25px;
-        width: 150px;
-        height: 50px;
-        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-        margin:0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        font-weight: 600;
-        &.selected {
-            background-color: var(--button-primary);
-            color: var(--white);
-        }
-    }
+  }
 }
 
 .custom-input {
-    width: 100%;
-    padding: 8px;
-    background: transparent;
-    border: 1px solid #4a4c57;
-    border-radius: 5px;
+  width: 95%;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--white);
+  margin-top: 8px;
+  box-shadow: 0px 0px 0px 2px var(--white);
+  transition: all 0.3s ease-in-out;
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px var(--button-primary);
+  }
+  //   &:hover {
+  //     box-shadow: 0px 0px 0px 1px var(--button-primary);
+  //   }
+}
+
+.fomr-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 1em 0;
 }

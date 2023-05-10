@@ -1,71 +1,150 @@
 <div id="form-privato" class="selected">
-    <div class="form-container">
-        <form action="">
-            <div class="row flex-start">
-                <div class="col-6">
-                    <div class="flex flex-column gap-8">
-                        <label for="email">
-                            <div>Email:</div>
-                            <input class="custom-input" type="email" name="email" id="email">
-                        </label>
-    
-                        <label for="nome">
-                            <div>Nome:</div>
-                            <input class="custom-input" type="text" name="nome" id="nome">
-                        </label>
-    
-                        <label for="telefono">
-                            <div>Telefono:</div>
-                            <input class="custom-input" type="tel" name="telefono" id="telefono">
-                        </label>
-    
-                        <label for="potenza-impianto">
-                            <div>Potenza impianto:</div>
-                            <input class="custom-input" type="text" name="potenza-impianto" id="potenza-impianto">
-                        </label>
-    
-                        <label for="indirizzo">
-                            <div>Indirizzo:</div>
-                        <input class="custom-input" type="text" name="indirizzo" id="indirizzo">
-                        </label>
-    
-                        
-                    </div>
+  <div class="form-container">
+    <form action="">
+      <div class="row">
+        <div class="col-12">
+          <h4>Dati base per la registrazione (Obbligatori *):</h4>
+        </div>
+      </div>
+      <div class="row align-top">
+        <div class="col-6">
+          <div class="flex flex-column gap-8">
+            <label for="email">
+              <div>Email *:</div>
+              <input
+                class="custom-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="tua@email.it"
+                required
+              />
+            </label>
 
-                </div>
-                <div class="col-6">
-                    <div class="flex flex-column gap-8">
-                        <label for="marca-pannelli">
-                            <div>Marca pannelli:</div>
-                            <input class="custom-input" type="text" name="marca-pannelli" id="marca-pannelli">
-                        </label>
+            <label for="nome">
+              <div>Nome *:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Mario Rossi"
+                required
+              />
+            </label>
 
-                        <label for="marca-inverter">
-                            <div>Marca inverter:</div>
-                            <input class="custom-input" type="text" name="marca-inverter" id="marca-inverter">
-                        </label>
-            
-                        <label for="anno-allaccio">
-                            <div>Anno allaccio:</div>
-                            <input class="custom-input" type="text" name="anno-allaccio" id="anno-allaccio">
-                        </label>
-            
-                        <label for="esposizione">
-                            <div>Esposizione:</div>
-                            <input class="custom-input" type="text" name="esposizione" id="esposizione">
-                        </label>
-            
-                        <label for="nome-azienda">
-                            <div>Nome azienda:</div>
-                            <input class="custom-input" type="text" name="nome-azieda" id="nome-azienda">
-                        </label>
+            <label for="telefono">
+              <div>Telefono *:</div>
+              <input
+                class="custom-input"
+                type="tel"
+                name="telefono"
+                id="telefono"
+                placeholder="3401447853"
+                required
+              />
+            </label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="flex flex-column gap-8">
+            <label for="potenza-impianto">
+              <div>Potenza impianto *:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="potenza-impianto"
+                id="potenza-impianto"
+                placeholder="3 kWh"
+                required
+              />
+            </label>
 
-                    </div>
-                </div>
-            </div>
-            
+            <label for="indirizzo">
+              <div>Indirizzo *:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="indirizzo"
+                id="indirizzo"
+                placeholder="Via Torino, 5 - 10036 Settimo t.se"
+                required
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h4>Dati aggiuntivi per una migliore esperienza:</h4>
+        </div>
+      </div>
+      <div class="row align-top">
+        <div class="col-6">
+          <div class="flex flex-column gap-8">
+            <label for="marca-pannelli">
+              <div>Marca pannelli:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="marca-pannelli"
+                id="marca-pannelli"
+                placeholder="Sunpower"
+              />
+            </label>
 
-            <button type="submit">Registrati</button>
-        </form>
-    </div>
+            <label for="marca-inverter">
+              <div>Marca inverter:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="marca-inverter"
+                id="marca-inverter"
+                placeholder="SolarEdge"
+              />
+            </label>
+
+            <label for="anno-allaccio">
+              <div>Anno allaccio:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="anno-allaccio"
+                id="anno-allaccio"
+                placeholder="2022"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="flex flex-column gap-8">
+            <label for="esposizione">
+              <div>Esposizione:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="esposizione"
+                id="esposizione"
+                placeholder="Est/Ovest"
+              />
+            </label>
+
+            <label for="nome-azienda">
+              <div>Nome ditta installatrice:</div>
+              <input
+                class="custom-input"
+                type="text"
+                name="nome-azieda"
+                id="nome-azienda"
+                placeholder="Vip Energy srl"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="fomr-action">
+        <button type="submit" class="button-primary">Registrati</button>
+      </div>
+    </form>
+  </div>
 </div>

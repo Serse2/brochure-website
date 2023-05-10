@@ -2,7 +2,7 @@
     background: var(--background-primary);
     padding: 1em;
     margin-bottom: -20px;
-    
+
     .hero-content {
         display: flex;
         flex-direction: column;
@@ -20,17 +20,17 @@
             display: flex;
             flex-direction: row;
             padding-top: 3em;
-            
+
             img {
                 width: 450px;
             }
         }
     }
-    .hero-text{
+    .hero-text {
         width: 100%;
         @media screen and (min-width: 821px) {
             width: 50%;
-                padding: 0em 2em;
+            padding: 0em 2em;
         }
     }
 }
@@ -52,5 +52,3 @@
         }
     }
 }
-
-
