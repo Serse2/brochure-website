@@ -1,22 +1,64 @@
 <div id="form-azienda">
-    <div class="form-container">
-        <form action="">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+  <div class="form-container">
+    <form
+      name="form-azienda"
+      action="/pages/registrazione-avvenuta-azienda.html"
+      method="POST"
+      data-netlify="true"
+    >
+      <div class="row">
+        <div class="col-12">
+          <h4>Dati pbbligatori contrassegnati con *:</h4>
+        </div>
+      </div>
+      <div class="row align-top">
+        <div class="col-6">
+          <div class="flex flex-column gap-8">
+            <label for="email">
+              <div>Email *:</div>
+              <input
+                class="custom-input"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </label>
 
-            <label for="nome">Ragione Sociale:</label>
-            <input type="text" name="nome" id="nome">
+            <label for="nome">
+              <div>Ragione Sociale *:</div>
+              <input class="custom-input" type="text" name="nome" id="nome" />
+            </label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="flex flex-column gap-8">
+            <label for="telefono">
+              <div>Telefono *:</div>
+              <input
+                class="custom-input"
+                type="tel"
+                name="telefono"
+                id="telefono"
+              />
+            </label>
 
-            <label for="telefono">Telefono:</label>
-            <input type="tel" name="telefono" id="telefono">
-
-            <label for="note">Potenza impianto (espresso in kWh):</label>
-            <input type="number" name="note" id="note" min="0" max="100000">
-
-            <label for="licenze">Numero di licenze:</label>
-            <input type="number" name="licenze" id="licenze" min="0" max="100000">
-
-            <button type="submit">Richiedi licenze</button>
-        </form>
-    </div>
+            <label for="licenze">
+              <div>Numero di licenze *:</div>
+              <input
+                class="custom-input"
+                type="number"
+                name="licenze"
+                id="licenze"
+                min="0"
+                max="100000"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="fomr-action">
+        <button type="submit" class="button-primary">Richiedi licenze</button>
+      </div>
+    </form>
+  </div>
 </div>
