@@ -3,8 +3,8 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 4 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build"
+    "start": "parcel  ./*.html",
+    "build": "parcel build ./*.html"
   },
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.8.3",
