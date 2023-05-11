@@ -8,24 +8,24 @@ const labelPrivato = document.querySelector('.label-radio-privato')
 const labelAzienda = document.querySelector('.label-radio-azienda')
 
 if (
-    radioPrivato &&
-    radioAzienda &&
-    formPrivato &&
-    formAzienda &&
-    labelPrivato &&
-    labelAzienda
+  radioPrivato &&
+  radioAzienda &&
+  formPrivato &&
+  formAzienda &&
+  labelPrivato &&
+  labelAzienda
 ) {
-    radioPrivato.addEventListener('click', () => {
-        formAzienda.classList.remove('selected')
-        labelAzienda.classList.remove('selected')
-        formPrivato.classList.add('selected')
-        labelPrivato.classList.add('selected')
-    })
+  radioPrivato.addEventListener('click', () => {
+    formAzienda.classList.remove('selected')
+    labelAzienda.classList.remove('selected')
+    formPrivato.classList.add('selected')
+    labelPrivato.classList.add('selected')
+  })
 
-    radioAzienda.addEventListener('click', () => {
-        formAzienda.classList.add('selected')
-        formPrivato.classList.remove('selected')
-        labelAzienda.classList.add('selected')
-        labelPrivato.classList.remove('selected')
-    })
+  radioAzienda.addEventListener('click', () => {
+    formAzienda.classList.add('selected')
+    formPrivato.classList.remove('selected')
+    labelAzienda.classList.add('selected')
+    labelPrivato.classList.remove('selected')
+  })
 }

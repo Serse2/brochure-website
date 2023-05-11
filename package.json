@@ -4,7 +4,9 @@
   "browserslist": "> 0.5%, last 4 versions, not dead",
   "scripts": {
     "start": "parcel src/index.html src/pages/*.html",
-    "build": "parcel build src/index.html src/pages/*.html"
+    "start:banner": "parcel src/banners/adv.html",
+    "build": "parcel build src/index.html src/pages/*.html",
+    "build:banner": "parcel build src/banners/adv.html --dist-dir=dist/banners"
   },
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.8.3",
