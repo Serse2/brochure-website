@@ -12,6 +12,21 @@
   }
 }
 
+.custom-label {
+  p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    line-height: 100%;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+  &.privacy {
+    display: flex;
+    gap: 8px;
+  }
+}
+
 .form-section {
   background-color: var(--background-primary);
   margin-top: -10px;

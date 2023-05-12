@@ -14,8 +14,8 @@
       <div class="row align-top">
         <div class="col-6">
           <div class="flex flex-column gap-8">
-            <label for="email">
-              <div>Email *:</div>
+            <label class="custom-label" for="email">
+              <p>Email *:</p>
               <input
                 class="custom-input"
                 type="email"
@@ -25,8 +25,8 @@
               />
             </label>
 
-            <label for="nome">
-              <div>Ragione Sociale *:</div>
+            <label class="custom-label" for="nome">
+              <p>Ragione Sociale *:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -39,8 +39,8 @@
         </div>
         <div class="col-6">
           <div class="flex flex-column gap-8">
-            <label for="telefono">
-              <div>Telefono *:</div>
+            <label class="custom-label" for="telefono">
+              <p>Telefono *:</p>
               <input
                 class="custom-input"
                 type="tel"
@@ -50,8 +50,8 @@
               />
             </label>
 
-            <label for="licenze">
-              <div>Numero di licenze *:</div>
+            <label class="custom-label" for="licenze">
+              <p>Numero di licenze:</p>
               <input
                 class="custom-input"
                 type="number"
@@ -59,13 +59,32 @@
                 id="licenze"
                 min="0"
                 max="100000"
-                required
               />
             </label>
           </div>
         </div>
       </div>
-      <div class="fomr-action">
+      <div class="row mt-16">
+        <div class="col-12">
+          <label class="custom-label privacy">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="checkbox-privacy-privato"
+              tabindex="1"
+              required
+            />
+            <p>
+              Ho letto, compreso e accettato i
+              <a href="/src/pages/termini-condizioni.html" target="_blank"
+                >termini e condizioni</a
+              >
+              (obbligatori)
+            </p>
+          </label>
+        </div>
+      </div>
+      <div class="fomr-action mt-16">
         <button type="submit" class="button-primary">Richiedi licenze</button>
       </div>
     </form>

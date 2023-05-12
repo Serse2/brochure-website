@@ -14,8 +14,8 @@
       <div class="row align-top">
         <div class="col-6">
           <div class="flex flex-column gap-8">
-            <label for="email">
-              <div>Email *:</div>
+            <label class="custom-label" for="email">
+              <p>Email *:</p>
               <input
                 class="custom-input"
                 type="email"
@@ -26,8 +26,8 @@
               />
             </label>
 
-            <label for="nome">
-              <div>Nome *:</div>
+            <label class="custom-label" for="nome">
+              <p>Nome *:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -38,8 +38,8 @@
               />
             </label>
 
-            <label for="telefono">
-              <div>Telefono *:</div>
+            <label class="custom-label" for="telefono">
+              <p>Telefono *:</p>
               <input
                 class="custom-input"
                 type="tel"
@@ -53,8 +53,8 @@
         </div>
         <div class="col-6">
           <div class="flex flex-column gap-8">
-            <label for="potenza-impianto">
-              <div>Potenza impianto *:</div>
+            <label class="custom-label" for="potenza-impianto">
+              <p>Potenza impianto *:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -65,8 +65,8 @@
               />
             </label>
 
-            <label for="indirizzo">
-              <div>Indirizzo *:</div>
+            <label class="custom-label" for="indirizzo">
+              <p>Indirizzo *:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -87,8 +87,8 @@
       <div class="row align-top">
         <div class="col-6">
           <div class="flex flex-column gap-8">
-            <label for="marca-pannelli">
-              <div>Marca pannelli:</div>
+            <label class="custom-label" for="marca-pannelli">
+              <p>Marca pannelli:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -98,8 +98,8 @@
               />
             </label>
 
-            <label for="marca-inverter">
-              <div>Marca inverter:</div>
+            <label class="custom-label" for="marca-inverter">
+              <p>Marca inverter:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -109,8 +109,8 @@
               />
             </label>
 
-            <label for="anno-allaccio">
-              <div>Anno allaccio:</div>
+            <label class="custom-label" for="anno-allaccio">
+              <p>Anno allaccio:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -123,8 +123,8 @@
         </div>
         <div class="col-6">
           <div class="flex flex-column gap-8">
-            <label for="esposizione">
-              <div>Esposizione:</div>
+            <label class="custom-label" for="esposizione">
+              <p>Esposizione:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -134,8 +134,8 @@
               />
             </label>
 
-            <label for="nome-azienda">
-              <div>Nome ditta installatrice:</div>
+            <label class="custom-label" for="nome-azienda">
+              <p>Nome ditta installatrice:</p>
               <input
                 class="custom-input"
                 type="text"
@@ -147,7 +147,27 @@
           </div>
         </div>
       </div>
-      <div class="fomr-action">
+      <div class="row mt-16">
+        <div class="col-12">
+          <label class="custom-label privacy">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="checkbox-privacy-privato"
+              tabindex="1"
+              required
+            />
+            <p>
+              Ho letto, compreso e accettato i
+              <a href="/src/pages/termini-condizioni.html" target="_blank"
+                >termini e condizioni</a
+              >
+              (obbligatori)
+            </p>
+          </label>
+        </div>
+      </div>
+      <div class="fomr-action mt-16">
         <button type="submit" class="button-primary">Registrati</button>
       </div>
     </form>
