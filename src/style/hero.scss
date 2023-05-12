@@ -1,54 +1,49 @@
 .hero {
-    background: var(--background-primary);
-    padding: 1em;
-    margin-bottom: -20px;
+  background: var(--background-primary);
+  padding: 1em;
+  margin-bottom: -20px;
 
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-        padding-top: 1em;
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 1em;
 
-        img {
-            width: 300px;
-            position: relative;
-            z-index: 1;
-        }
-        @media screen and (min-width: 821px) {
-            display: flex;
-            flex-direction: row;
-            padding-top: 3em;
-
-            img {
-                width: 450px;
-            }
-        }
-    }
-    .hero-text {
-        width: 100%;
-        @media screen and (min-width: 821px) {
-            width: 50%;
-            padding: 0em 2em;
-        }
-    }
-}
-.hero-bottom {
-    position: relative;
-
-    svg {
-        position: absolute;
-        top: 0;
+    img {
+      position: relative;
+      z-index: 1;
     }
     @media screen and (min-width: 821px) {
-        svg {
-            position: absolute;
-            top: -40px;
-        }
-        svg:nth-child(2) {
-            position: absolute;
-            top: -80px;
-        }
+      display: flex;
+      flex-direction: row;
+      padding-top: 3em;
     }
+  }
+  .hero-text {
+    width: 100%;
+    @media screen and (min-width: 821px) {
+      width: 50%;
+      padding: 0em 2em;
+    }
+  }
+}
+.hero-bottom {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 0;
+  }
+  @media screen and (min-width: 821px) {
+    svg {
+      position: absolute;
+      top: -40px;
+    }
+    svg:nth-child(2) {
+      position: absolute;
+      top: -80px;
+    }
+  }
 }
