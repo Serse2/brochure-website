@@ -3,8 +3,22 @@
   <head>
     <include src="src/base-meta.html"></include>
     <link rel="stylesheet" href="/src/style/hero.scss" />
-    <link rel="stylesheet" href="/src/style/advantages.scss" />
-    <link rel="stylesheet" href="/src/style/form.scss" />
+    <link
+      rel="preload"
+      href="/src/style/advantages.scss"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="/src/style/advantages.scss"
+    /></noscript>
+    <link
+      rel="preload"
+      href="/src/style/form.scss"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/src/style/form.scss" /></noscript>
     <title>Home page</title>
   </head>
   <body>
@@ -17,19 +31,27 @@
               <h1 class="text-display">
                 Monitoraggio impianto fotovoltaico online.
               </h1>
-              <h3 class="text-display-h3">
+              <h2 class="text-display-h3">
                 Produzione Fotovoltaico è l'applicazione online che consente il
                 controllo dell’impianto fotovoltaico per l'autoconsumo, il
                 consumo e la produzione di energia attraverso le autoletture dei
                 contatori.
-              </h3>
+              </h2>
               <button class="button-primary">Inizia subito!</button>
             </div>
-            <img
-              src="assets/images/Phone-mockup.webp"
-              alt="Produzione Fotovoltaico applicazione"
-              width="200px"
-            />
+            <picture>
+              <source
+                media="(max-width: 821px)"
+                srcset="assets/images/Phone-mockup.webp"
+                width="300px"
+              />
+              <img
+                src="assets/images/Phone-mockup.webp"
+                alt="Produzione Fotovoltaico applicazione"
+                width="450px"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
         <div class="hero-bottom">
@@ -251,7 +273,7 @@
               src="assets/images/phone-mockup-2.webp"
               alt="Produzione Fotovoltaico applicazione"
               width="100%"
-              loading="lazy"
+              height="100%"
             />
           </div>
           <div class="col-5">
@@ -311,6 +333,7 @@
               src="assets/images/phone-mockup-4.webp"
               alt="Produzione Fotovoltaico applicazione"
               width="100%"
+              height="100%"
               loading="lazy"
             />
           </div>
@@ -321,6 +344,7 @@
               src="assets/images/phone-mockup-5.webp"
               alt="Produzione Fotovoltaico applicazione"
               width="100%"
+              height="100%"
               loading="lazy"
             />
           </div>
