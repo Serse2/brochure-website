@@ -63,6 +63,13 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="/src/style/form.scss" /></noscript>
+    <link
+      rel="preload"
+      href="/src/style/slider.scss"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/src/style/slider.scss" /></noscript>
     <title>Produzione Fotovoltaico | Home page</title>
   </head>
   <body>
@@ -530,9 +537,22 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="row">
+          <div class="col-7">
+            <h3 class="text-display-h2 pd-16">Chi l'ha provata</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <include src="src/common/slider.html"></include>
+          </div>
+        </div>
+      </section>
       <include src="src/common/footer.html"></include>
     </main>
     <script type="module" src="scripts/index.ts" async></script>
     <script type="module" src="scripts/select-form.ts" async></script>
+    <script type="module" src="scripts/slider.ts" async></script>
   </body>
 </html>
