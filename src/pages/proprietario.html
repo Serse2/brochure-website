@@ -46,6 +46,13 @@
     />
 
     <link rel="stylesheet" href="/src/style/form.scss" />
+    <link
+      rel="preload"
+      href="/src/style/slider.scss"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/src/style/slider.scss" /></noscript>
     <title>Monitora impianto fotovoltaico | Autoletture contatori</title>
   </head>
   <body>
@@ -359,7 +366,23 @@
           </div>
         </div>
       </div>
+      <section>
+        <div class="row">
+          <div class="col-7">
+            <h3 class="text-display-h2 pd-16">
+              Le parole di chi ha provato la nostra Web App Produzione
+              Fotovoltaico
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <include src="src/common/slider.html"></include>
+          </div>
+        </div>
+      </section>
+      <include src="src/common/footer.html"></include>
     </main>
+    <script type="module" src="/src/scripts/slider.ts" async></script>
   </body>
-  <include src="src/common/footer.html"></include>
 </html>
