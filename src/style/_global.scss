@@ -60,11 +60,14 @@ p {
 
 .text-display {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: 700;
   line-height: 125%;
   letter-spacing: 2px;
   text-transform: uppercase;
+  @media screen and (min-width: 821px) {
+    font-size: 2.5em;
+  }
 }
 
 .text-display-h2 {
