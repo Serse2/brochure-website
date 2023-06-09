@@ -3,9 +3,9 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 4 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html src/pages/*.html",
+    "start": "parcel src/index.html src/404.html src/pages/*.html",
     "start:banner": "parcel src/banners/adv.html",
-    "build": "parcel build --public-url=\"https://produzione-fotovoltaico.it/\" --reporter parcel-reporter-sitemap src/index.html src/pages/*.html && cp ./robots.txt dist/",
+    "build": "parcel build --public-url=\"https://produzione-fotovoltaico.it/\" --reporter parcel-reporter-sitemap src/index.html src/404.html src/pages/*.html && cp ./robots.txt dist/",
     "build:banner": "parcel build src/banners/adv.html --dist-dir=dist/banners"
   },
   "devDependencies": {
