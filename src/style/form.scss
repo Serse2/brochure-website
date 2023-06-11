@@ -91,6 +91,7 @@
   margin-top: 8px;
   box-shadow: 0px 0px 0px 2px var(--white);
   transition: all 0.3s ease-in-out;
+  appearance: none;
   &:focus,
   &:focus-visible {
     outline: none;
@@ -101,11 +102,15 @@
   //   }
 }
 
-.fomr-action {
+.form-action {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
   margin: 1em 0;
+}
+
+.form-action_note {
+  font-size: small;
+  font-style: italic;
 }
