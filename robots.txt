@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /pages/registrazione-avvenuta-monitoraggio-impianto-fotovoltaico-domestico.html
 
 Sitemap: https:/produzione-fotovoltaico.it/sitemap.xml
