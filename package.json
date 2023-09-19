@@ -2,6 +2,7 @@
   "name": "test-produzione-fotovoltaico",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 4 versions, not dead",
+  "license": "UNLICENSED",
   "scripts": {
     "start": "parcel src/index.html src/404.html src/pages/*.html",
     "start:banner": "parcel src/banners/adv.html",
